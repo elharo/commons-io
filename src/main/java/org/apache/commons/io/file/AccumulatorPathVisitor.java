@@ -190,10 +190,7 @@ public class AccumulatorPathVisitor extends CountingPathVisitor {
 
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = super.hashCode();
-        result = prime * result + Objects.hash(dirList, fileList);
-        return result;
+        return Objects.hash(dirList, fileList);
     }
 
     /**
